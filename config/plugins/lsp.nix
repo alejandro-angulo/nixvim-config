@@ -1,6 +1,22 @@
 {pkgs, ...}: {
   plugins.lsp = {
     enable = true;
+
+    keymaps.extra = [
+      {
+        action = "<cmd>LspStop<CR>";
+        key = "<leader>lx";
+      }
+      {
+        action = "<cmd>LspStart<CR>";
+        key = "<leader>ls";
+      }
+      {
+        action = "<cmd>LspRestart<CR>";
+        key = "<leader>lr";
+      }
+    ];
+
     servers = {
       # python
       ruff.enable = true;
