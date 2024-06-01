@@ -2,6 +2,7 @@
   # Import all your configuration modules here
   # imports = [./bufferline.nix];
   imports = [
+    ./plugins/cmp.nix
     ./plugins/gitsigns.nix
     ./plugins/lsp.nix
     ./plugins/lualine.nix
