@@ -52,5 +52,6 @@
       hydraJobs = {
         neovim = inputs.self.packages.x86_64-linux.default;
       };
+      nixosModules.neovim = import ./config;
     };
 }
