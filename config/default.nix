@@ -4,6 +4,7 @@
   imports = [
     ./plugins/gitsigns.nix
     ./plugins/lsp.nix
+    ./plugins/lualine.nix
     ./plugins/rhubarb.nix
   ];
 
@@ -56,7 +57,6 @@
   ];
 
   plugins = {
-    lualine.enable = true;
     telescope.enable = true;
     treesitter.enable = true;
     tmux-navigator.enable = true;
