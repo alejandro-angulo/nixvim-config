@@ -20,6 +20,10 @@
         "aarch64-darwin"
       ];
 
+      hydraJobs = {
+        neovim = inputs.self.packages.default;
+      };
+
       perSystem = {
         pkgs,
         system,
