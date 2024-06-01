@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   plugins.lsp = {
     enable = true;
     servers = {
@@ -19,7 +19,13 @@
       ocamllsp.enable = true;
 
       # nix
-      nixd.enable = true;
+      nixd = {
+        enable = true;
+        settings.formatting.command = ["${pkgs.alejandra}/bin/alejandra"];
+      };
     };
   };
+
+  plugins.lsp-format.enable = true;
+  plugins.lsp-lines.enable = true;
 }

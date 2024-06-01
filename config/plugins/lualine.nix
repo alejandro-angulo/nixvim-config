@@ -7,7 +7,7 @@
     };
     "sectionSeparators" = {
       right = "";
-      left= "";
+      left = "";
     };
   };
 }
