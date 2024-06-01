@@ -20,10 +20,6 @@
         "aarch64-darwin"
       ];
 
-      hydraJobs = {
-        neovim = inputs.self.packages.default;
-      };
-
       perSystem = {
         pkgs,
         system,
@@ -50,6 +46,11 @@
           # Lets you run `nix run .` to start nixvim
           default = nvim;
         };
+      };
+    }
+    // {
+      hydraJobs = {
+        neovim = inputs.self.packages.x86_64-linux.default;
       };
     };
 }
