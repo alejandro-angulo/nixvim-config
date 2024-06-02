@@ -20,6 +20,7 @@
     servers = {
       # python
       ruff.enable = true;
+      pyright.enable = true;
 
       # lua (nvim config)
       lua-ls.enable = true;
