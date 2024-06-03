@@ -15,7 +15,27 @@
         action = "<cmd>LspRestart<CR>";
         key = "<leader>lr";
       }
+      {
+        action = "<cmd>split | lua vim.lsp.buf.definition()<CR>";
+        key = "gs";
+      }
+      {
+        action = "<cmd>vsplit | lua vim.lsp.buf.definition()<CR>";
+        key = "gv";
+      }
+      {
+        action = "<cmd>tab split | lua vim.lsp.buf.definition()<CR>";
+        key = "gn";
+      }
     ];
+
+    keymaps.lspBuf = {
+      "K" = "hover";
+      "gD" = "references";
+      "gd" = "definition";
+      "gi" = "implementation";
+      "gt" = "type_definition";
+    };
 
     servers = {
       # python
