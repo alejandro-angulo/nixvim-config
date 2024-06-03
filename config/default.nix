@@ -63,6 +63,7 @@
     tmux-navigator.enable = true;
     fugitive.enable = true;
     comment.enable = true;
+    rustaceanvim.enable = true;
 
     /*
     :TransparentEnable

@@ -20,6 +20,7 @@
       sources = [
         {name = "buffer";}
         {name = "cmdline";}
+        {name = "cmp-clippy";}
         {name = "luasnip";}
         {name = "nvim_lsp";}
         {name = "path";}
