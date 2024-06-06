@@ -5,6 +5,12 @@
     {
       action = "<cmd>GBrowse<CR>";
       key = "<leader>bro";
+      mode = ["n"];
+    }
+    {
+      action = ":GBrowse<CR>";
+      key = "<leader>bro";
+      mode = ["v"];
     }
   ];
 }
