@@ -44,8 +44,8 @@
       # lua (nvim config)
       lua-ls.enable = true;
 
-      # ocaml
-      ocamllsp.enable = true;
+      # bash
+      bashls.enable = true;
 
       # nix
       nixd = {
