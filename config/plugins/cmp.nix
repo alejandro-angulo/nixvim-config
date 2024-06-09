@@ -3,8 +3,10 @@
     enable = true;
     settings = {
       mapping = {
-        "<C-p>" = "cmp.mapping.scroll_docs(-4)";
-        "<C-n>" = "cmp.mapping.scroll_docs(4)";
+        "<C-n>" = "cmp.mapping.select_next_item()";
+        "<C-p>" = "cmp.mapping.select_prev_item()";
+        "<C-u>" = "cmp.mapping.scroll_docs(-4)";
+        "<C-d>" = "cmp.mapping.scroll_docs(4)";
         "<C-Space>" = "cmp.mapping.complete()";
         "<C-e>" = "cmp.mapping.abort()";
         # Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
