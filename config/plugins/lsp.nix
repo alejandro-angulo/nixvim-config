@@ -47,6 +47,9 @@
       # bash
       bashls.enable = true;
 
+      # haskell
+      hls.enable = true;
+
       # nix
       nixd = {
         enable = true;
