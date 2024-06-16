@@ -50,6 +50,9 @@
       # haskell
       hls.enable = true;
 
+      # c++
+      clangd.enable = true;
+
       # nix
       nixd = {
         enable = true;
