@@ -50,6 +50,9 @@
       # haskell
       hls.enable = true;
 
+      # json
+      jsonls.enable = true;
+
       # c++
       clangd.enable = true;
 
