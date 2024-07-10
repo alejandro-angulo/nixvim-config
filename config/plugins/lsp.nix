@@ -53,6 +53,9 @@
       # json
       jsonls.enable = true;
 
+      # css
+      cssls.enable = true;
+
       # c++
       clangd.enable = true;
 
