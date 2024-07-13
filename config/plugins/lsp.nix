@@ -53,6 +53,9 @@
       # json
       jsonls.enable = true;
 
+      # yaml
+      yamlls.enable = true;
+
       # css
       cssls.enable = true;
 
