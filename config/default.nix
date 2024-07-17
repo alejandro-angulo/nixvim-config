@@ -7,6 +7,7 @@
     ./plugins/lsp.nix
     ./plugins/lualine.nix
     ./plugins/rhubarb.nix
+    ./plugins/vim-obsession.nix
   ];
 
   colorschemes.base16 = {
