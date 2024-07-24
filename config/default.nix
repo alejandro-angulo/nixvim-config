@@ -24,6 +24,8 @@
     tabstop = 4;
     shiftwidth = 4;
     mouse = "a";
+    # Open files with all folds expanded (`zM` to collapse all)
+    foldlevel = 99;
   };
 
   globals = {
