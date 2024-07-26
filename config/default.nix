@@ -7,6 +7,7 @@
     ./plugins/lsp.nix
     ./plugins/lualine.nix
     ./plugins/rhubarb.nix
+    ./plugins/telescope.nix
     ./plugins/vim-obsession.nix
   ];
 
@@ -61,7 +62,6 @@
   ];
 
   plugins = {
-    telescope.enable = true;
     treesitter.enable = true;
     tmux-navigator.enable = true;
     fugitive.enable = true;
