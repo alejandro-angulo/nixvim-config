@@ -35,12 +35,8 @@
 
   keymaps = [
     {
-      action = "<cmd>Telescope find_files<CR>";
-      key = "<leader>f";
-    }
-    {
-      action = "<cmd>Telescope live_grep<CR>";
-      key = "<leader>g";
+      action = "<cmd>:set rnu!<CR>";
+      key = "<leader>num";
     }
     {
       action = "<cmd>:TransparentToggle<CR>";
