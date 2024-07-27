@@ -8,13 +8,12 @@
           hijack_netrw = true;
         };
       };
-      frecency.enable = true;
     };
   };
 
   keymaps = [
     {
-      action = "<cmd>Telescope frecency<CR>";
+      action = "<cmd>Telescope find_files<CR>";
       key = "<leader>f";
     }
     {
