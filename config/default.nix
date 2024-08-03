@@ -4,6 +4,7 @@
   imports = [
     ./plugins/cmp.nix
     ./plugins/gitsigns.nix
+    ./plugins/lazygit.nix
     ./plugins/lsp.nix
     ./plugins/lualine.nix
     ./plugins/rhubarb.nix
