@@ -9,6 +9,12 @@
         };
       };
     };
+    settings.defaults.mappings = {
+      "i" = {
+        "<C-n>" = {__raw = "require('telescope.actions').cycle_history_next";};
+        "<C-p>" = {__raw = "require('telescope.actions').cycle_history_prev";};
+      };
+    };
   };
 
   keymaps = [
