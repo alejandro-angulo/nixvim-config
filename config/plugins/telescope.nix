@@ -27,6 +27,10 @@
       key = "<leader>g";
     }
     {
+      action = "<cmd>Telescope buffers<CR>";
+      key = "<leader>u";
+    }
+    {
       action = "<cmd>Telescope file_browser path=%:p:h select_buffer=true<CR>";
       key = "<leader>b";
     }
