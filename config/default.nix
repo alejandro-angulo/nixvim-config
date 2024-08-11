@@ -12,9 +12,9 @@
     ./plugins/vim-obsession.nix
   ];
 
-  colorschemes.base16 = {
+  colorschemes.catppuccin = {
     enable = true;
-    colorscheme = "darktooth";
+    settings.flavour = "mocha";
   };
 
   opts = {
