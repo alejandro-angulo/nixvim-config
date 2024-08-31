@@ -15,6 +15,7 @@
   colorschemes.catppuccin = {
     enable = true;
     settings.flavour = "mocha";
+    settings.transparent_background = true;
   };
 
   opts = {
@@ -39,10 +40,6 @@
       action = "<cmd>:set rnu!<CR>";
       key = "<leader>num";
     }
-    {
-      action = "<cmd>:TransparentToggle<CR>";
-      key = "<leader>t";
-    }
   ];
 
   autoCmd = [
@@ -64,18 +61,5 @@
     fugitive.enable = true;
     comment.enable = true;
     rustaceanvim.enable = true;
-
-    /*
-    :TransparentEnable
-    :TransparentDisable
-    :TransparentToggle
-    */
-    transparent = {
-      enable = true;
-      settings.exclude_groups = [
-        "CursorLine"
-        "CursorLineNr"
-      ];
-    };
   };
 }
