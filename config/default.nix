@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   # Import all your configuration modules here
   # imports = [./bufferline.nix];
   imports = [
@@ -56,7 +56,11 @@
   ];
 
   plugins = {
-    treesitter.enable = true;
+    treesitter = {
+      enable = true;
+      settings.highlight.enable = true;
+    };
+    treesitter-context.enable = true;
     tmux-navigator.enable = true;
     fugitive.enable = true;
     comment.enable = true;
