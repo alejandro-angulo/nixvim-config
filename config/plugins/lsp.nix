@@ -62,6 +62,9 @@
       # c++
       clangd.enable = true;
 
+      # elixir
+      elixirls.enable = true;
+
       # nix
       nixd = {
         enable = true;
