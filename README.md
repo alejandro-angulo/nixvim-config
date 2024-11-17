@@ -1,5 +1,8 @@
 # Nixvim template
 
+The canonical version of this repo lives on my personal git server at
+[https://git.alejandr0angul0.dev/alejandro-angulo/nixvim-config](https://git.alejandr0angul0.dev/alejandro-angulo/nixvim-config).
+
 This template gives you a good starting point for configuring nixvim standalone.
 
 ## Configuring
