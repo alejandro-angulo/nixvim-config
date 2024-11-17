@@ -41,14 +41,8 @@
       ruff.enable = true;
       pyright.enable = true;
 
-      # lua (nvim config)
-      lua-ls.enable = true;
-
       # bash
       bashls.enable = true;
-
-      # haskell
-      hls.enable = true;
 
       # json
       jsonls.enable = true;
@@ -64,6 +58,18 @@
 
       # elixir
       elixirls.enable = true;
+
+      terraformls.enable = true;
+      tflint.enable = true;
+
+      # rust
+      rust_analyzer = {
+        enable = true;
+        # Rely on tooling from dev environment
+        package = null;
+        installCargo = false;
+        installRustc = false;
+      };
 
       # nix
       nixd = {

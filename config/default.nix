@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   # Import all your configuration modules here
   # imports = [./bufferline.nix];
   imports = [
@@ -64,6 +64,6 @@
     tmux-navigator.enable = true;
     fugitive.enable = true;
     comment.enable = true;
-    rustaceanvim.enable = true;
+    fidget.enable = true;
   };
 }
