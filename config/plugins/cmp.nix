@@ -2,7 +2,9 @@
   plugins.cmp = {
     enable = true;
     settings = {
-      completion = {keyword_length = 2;};
+      completion = {
+        keyword_length = 2;
+      };
 
       mapping = {
         "<C-n>" = "cmp.mapping.select_next_item()";
@@ -22,12 +24,12 @@
       '';
 
       sources = [
-        {name = "nvim_lsp";}
-        {name = "buffer";}
-        {name = "cmdline";}
-        {name = "cmp-clippy";}
-        {name = "luasnip";}
-        {name = "path";}
+        { name = "nvim_lsp"; }
+        { name = "buffer"; }
+        { name = "cmdline"; }
+        { name = "cmp-clippy"; }
+        { name = "luasnip"; }
+        { name = "path"; }
       ];
     };
   };

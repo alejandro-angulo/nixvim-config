@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   plugins.lsp = {
     enable = true;
 
@@ -74,7 +75,7 @@
       # nix
       nixd = {
         enable = true;
-        settings.formatting.command = ["${pkgs.alejandra}/bin/alejandra"];
+        settings.formatting.command = [ "${pkgs.nixfmt-rfc-style}/bin/nixfmt" ];
       };
     };
   };

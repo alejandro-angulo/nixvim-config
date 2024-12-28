@@ -1,16 +1,17 @@
-{pkgs, ...}: {
-  extraPlugins = with pkgs.vimPlugins; [rhubarb];
+{ pkgs, ... }:
+{
+  extraPlugins = with pkgs.vimPlugins; [ rhubarb ];
 
   keymaps = [
     {
       action = "<cmd>GBrowse<CR>";
       key = "<leader>bro";
-      mode = ["n"];
+      mode = [ "n" ];
     }
     {
       action = ":GBrowse<CR>";
       key = "<leader>bro";
-      mode = ["v"];
+      mode = [ "v" ];
     }
   ];
 }

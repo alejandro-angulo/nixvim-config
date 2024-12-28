@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
   # Import all your configuration modules here
   # imports = [./bufferline.nix];
   imports = [
@@ -44,13 +45,13 @@
 
   autoCmd = [
     {
-      event = ["BufEnter"];
-      pattern = ["*"];
+      event = [ "BufEnter" ];
+      pattern = [ "*" ];
       command = "setlocal cursorline";
     }
     {
-      event = ["BufLeave"];
-      pattern = ["*"];
+      event = [ "BufLeave" ];
+      pattern = [ "*" ];
       command = "setlocal nocursorline";
     }
   ];
