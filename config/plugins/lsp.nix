@@ -2,6 +2,7 @@
 {
   plugins.lsp = {
     enable = true;
+    inlayHints = true;
 
     keymaps.extra = [
       {
@@ -40,7 +41,7 @@
     servers = {
       # python
       ruff.enable = true;
-      pyright.enable = true;
+      basedpyright.enable = true;
 
       # bash
       bashls.enable = true;

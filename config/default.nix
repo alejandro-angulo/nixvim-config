@@ -28,6 +28,8 @@
     tabstop = 4;
     shiftwidth = 4;
     mouse = "a";
+    wildmode = "longest,list,full";
+    wildmenu = true;
     # Open files with all folds expanded (`zM` to collapse all)
     foldlevel = 99;
   };
