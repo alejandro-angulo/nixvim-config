@@ -67,6 +67,7 @@
       # rust
       rust_analyzer = {
         enable = true;
+        settings.check.command = "clippy";
         # Rely on tooling from dev environment
         package = null;
         installCargo = false;
