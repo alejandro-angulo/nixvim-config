@@ -11,6 +11,7 @@
     ./plugins/lualine.nix
     ./plugins/rhubarb.nix
     ./plugins/telescope.nix
+    ./plugins/treesitter.nix
     ./plugins/vim-obsession.nix
   ];
 
@@ -24,7 +25,7 @@
     expandtab = true;
     number = true;
     relativenumber = true;
-    autoindent = true;
+    autoindent = false;
     termguicolors = true;
     tabstop = 4;
     shiftwidth = 4;
@@ -60,14 +61,23 @@
   ];
 
   plugins = {
-    treesitter = {
-      enable = true;
-      settings.highlight.enable = true;
-    };
-    treesitter-context.enable = true;
     tmux-navigator.enable = true;
     fugitive.enable = true;
     comment.enable = true;
     fidget.enable = true;
+    web-devicons.enable = true;
+
+    /*
+      :TransparentEnable
+      :TransparentDisable
+      :TransparentToggle
+    */
+    transparent = {
+      enable = true;
+      settings.exclude_groups = [
+        "CursorLine"
+        "CursorLineNr"
+      ];
+    };
   };
 }

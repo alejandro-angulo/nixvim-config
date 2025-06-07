@@ -58,9 +58,6 @@
       # c++
       clangd.enable = true;
 
-      # elixir
-      elixirls.enable = true;
-
       terraformls.enable = true;
       tflint.enable = true;
 
@@ -73,6 +70,9 @@
         installCargo = false;
         installRustc = false;
       };
+
+      # golang
+      gopls.enable = true;
 
       # nix
       nixd = {

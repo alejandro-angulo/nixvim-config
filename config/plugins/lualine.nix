@@ -2,11 +2,11 @@
   plugins.lualine = {
     enable = true;
     settings.options = {
-      component_separators = {
+      componentSeparators = {
         right = "";
         left = "";
       };
-      section_separators = {
+      sectionSeparators = {
         right = "";
         left = "";
       };
