@@ -61,6 +61,7 @@
   ];
 
   plugins = {
+    avante.enable = true;
     tmux-navigator.enable = true;
     fugitive.enable = true;
     comment.enable = true;
