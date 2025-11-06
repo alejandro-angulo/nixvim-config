@@ -1,10 +1,25 @@
 { pkgs, ... }:
 {
-  plugins.lsp = {
-    enable = true;
-    inlayHints = true;
+  lsp = {
+    inlayHints.enable = true;
 
-    keymaps.extra = [
+    keymaps = [
+      {
+        lspBufAction = "hover";
+        key = "K";
+      }
+      {
+        lspBufAction = "references";
+        key = "gD";
+      }
+      {
+        lspBufAction = "definition";
+        key = "gd";
+      }
+      {
+        lspBufAction = "implementation";
+        key = "gi";
+      }
       {
         action = "<cmd>LspStop<CR>";
         key = "<leader>lx";
@@ -30,13 +45,6 @@
         key = "gn";
       }
     ];
-
-    keymaps.lspBuf = {
-      "K" = "hover";
-      "gD" = "references";
-      "gd" = "definition";
-      "gi" = "implementation";
-    };
 
     servers = {
       # python
@@ -64,11 +72,9 @@
       # rust
       rust_analyzer = {
         enable = true;
-        settings.check.command = "clippy";
+        config.check.command = "clippy";
         # Rely on tooling from dev environment
         package = null;
-        installCargo = false;
-        installRustc = false;
       };
 
       # golang
@@ -77,11 +83,12 @@
       # nix
       nixd = {
         enable = true;
-        settings.formatting.command = [ "${pkgs.nixfmt-rfc-style}/bin/nixfmt" ];
+        config.formatting.command = [ "${pkgs.nixfmt-rfc-style}/bin/nixfmt" ];
       };
     };
   };
 
+  plugins.lspconfig.enable = true;
   plugins.lsp-format.enable = true;
   plugins.lsp-lines.enable = true;
 }
