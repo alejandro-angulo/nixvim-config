@@ -25,12 +25,9 @@
 
       sources = [
         { name = "nvim_lsp"; }
+        { name = "luasnip"; }
         { name = "buffer"; }
         { name = "path"; }
-        { name = "cmdline"; }
-        { name = "cmp-clippy"; }
-        { name = "luasnip"; }
-        { name = "nvim_lsp"; }
       ];
     };
   };
