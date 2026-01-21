@@ -47,6 +47,9 @@
     ];
 
     servers = {
+      # markdown
+      rumdl.enable = true;
+
       # python
       ruff.enable = true;
       basedpyright.enable = true;
