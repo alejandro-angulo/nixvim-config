@@ -86,7 +86,7 @@
       # nix
       nixd = {
         enable = true;
-        config.formatting.command = [ "${pkgs.nixfmt-rfc-style}/bin/nixfmt" ];
+        config.formatting.command = [ "${pkgs.nixfmt}/bin/nixfmt" ];
       };
     };
   };
