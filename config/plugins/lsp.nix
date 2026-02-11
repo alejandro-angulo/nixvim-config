@@ -48,7 +48,7 @@
 
     servers = {
       # markdown
-      rumdl.enable = true;
+      marksman.enable = true;
 
       # python
       ruff.enable = true;
