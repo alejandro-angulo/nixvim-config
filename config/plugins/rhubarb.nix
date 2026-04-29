@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  extraPlugins = with pkgs.vimPlugins; [ rhubarb ];
+  extraPlugins = with pkgs.vimPlugins; [ vim-rhubarb ];
 
   keymaps = [
     {
