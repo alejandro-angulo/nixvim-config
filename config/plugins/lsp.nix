@@ -83,6 +83,11 @@
       # golang
       gopls.enable = true;
 
+      # typescript
+      ts_ls.enable = true;
+      tailwindcss.enable = true;
+      eslint.enable = true;
+
       # nix
       nixd = {
         enable = true;
