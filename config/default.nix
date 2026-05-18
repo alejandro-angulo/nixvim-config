@@ -79,5 +79,12 @@
         "CursorLineNr"
       ];
     };
+
+    efmls-configs = {
+      enable = true;
+      languages = {
+        typescript.formatter = "prettier";
+      };
+    };
   };
 }

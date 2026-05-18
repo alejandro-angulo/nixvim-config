@@ -93,10 +93,23 @@
         enable = true;
         config.formatting.command = [ "${pkgs.nixfmt}/bin/nixfmt" ];
       };
+
+      # xml
+      lemminx.enable = true;
     };
   };
 
   plugins.lspconfig.enable = true;
-  plugins.lsp-format.enable = true;
+  plugins.lsp-format = {
+    enable = true;
+    settings = {
+      typescript = {
+        exclude = [ "ts_ls" ];
+      };
+      typescriptreact = {
+        exclude = [ "ts_ls" ];
+      };
+    };
+  };
   plugins.lsp-lines.enable = true;
 }
