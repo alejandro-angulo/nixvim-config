@@ -21,15 +21,15 @@
         key = "gi";
       }
       {
-        action = "<cmd>LspStop<CR>";
+        action = "<cmd>lsp stop<CR>";
         key = "<leader>lx";
       }
       {
-        action = "<cmd>LspStart<CR>";
+        action = "<cmd>lsp start<CR>";
         key = "<leader>ls";
       }
       {
-        action = "<cmd>LspRestart<CR>";
+        action = "<cmd>lsp restart<CR>";
         key = "<leader>lr";
       }
       {
