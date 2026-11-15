@@ -9,6 +9,7 @@
     ./plugins/lazygit.nix
     ./plugins/lsp.nix
     ./plugins/lualine.nix
+    ./plugins/mermaid.nix
     ./plugins/rhubarb.nix
     ./plugins/telescope.nix
     ./plugins/treesitter.nix
@@ -45,6 +46,10 @@
       action = "<cmd>:set rnu!<CR>";
       key = "<leader>num";
     }
+    {
+      action = "<cmd>:MarkdownPreviewToggle<CR>";
+      key = "<leader>m";
+    }
   ];
 
   autoCmd = [
@@ -66,6 +71,8 @@
     comment.enable = true;
     fidget.enable = true;
     web-devicons.enable = true;
+    mermaid.enable = true;
+    markdown-preview.enable = true;
 
     /*
       :TransparentEnable
